@@ -1,0 +1,17 @@
+.btn-operations {
+  border-radius: 50px;
+  background-color: var(--button-bg) !important;
+  color: var(--text-color) !important;
+}
+.btn-operations.clikced {
+  background-color: var(--button-hover) !important;
+}
+
+.btn-operations:hover {
+  background-color: var(--button-hover) !important;
+}
+
+.plus {
+  border-top-right-radius: 18px !important;
+  border-top-left-radius: 18px !important;
+}

@@ -1,0 +1,26 @@
+#numberss {
+  position: relative;
+  left: 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.n-row {
+  display: flex;
+}
+
+.n-column {
+  background-color: var(--button-bg);
+  color: var(--text-color);
+  margin-right: 12px;
+  border-radius: 50px;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+}
+
+.n-column:hover {
+  background-color: var(--button-hover);
+  color: var(--text-color);
+}

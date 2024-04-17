@@ -1,5 +1,23 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-color);
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+
+i {
+  color: var(--text-color);
+}
+
+.left-right {
+  display: flex;
+  padding: 25px 15px;
+  border-radius: 15px;
+  background: var(--calculator-bg);
 }
 
 .App-logo {
@@ -14,6 +32,7 @@
 }
 
 .App-header {
+  width: 100px;
   background-color: #282c34;
   min-height: 100vh;
   display: flex;

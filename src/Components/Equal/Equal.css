@@ -1,0 +1,10 @@
+.equal {
+  border-bottom-right-radius: 18px !important;
+  border-bottom-left-radius: 18px !important;
+  background-color: var(--button-bg) !important;
+  color: var(--text-color) !important;
+}
+
+.equal:hover {
+  background-color: var(--button-hover) !important;
+}
