@@ -3,19 +3,19 @@ import { useSelector } from "react-redux"
 import "../TopPart/TopPart.css"
 
 function TopPart() {
-  const answers = useSelector((state) =>
-    state.input.answer
-      .filter((item) => item !== "")
-      .slice(0, 3)
-      .reverse()
-  )
+  const storedAnswers = JSON.parse(localStorage.getItem("answers")) || []
+  const mirroredAnswers = storedAnswers
+    .filter((item) => item !== "")
+    .slice(0, 3)
+    .reverse()
+
   const [visibility, setVisibility] = useState(false)
 
   const showHistory = () => {
     setVisibility((prevVisibility) => !prevVisibility)
   }
 
-  const renderedAnswers = answers.map((item, index) => (
+  const renderedAnswers = mirroredAnswers.map((item, index) => (
     <span key={index}>{item}</span>
   ))
 

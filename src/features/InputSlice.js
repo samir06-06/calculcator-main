@@ -61,6 +61,7 @@ export const InputSlice = createSlice({
     calculate: (state) => {
       // eslint-disable-next-line
       state.answer.unshift(eval(state.input))
+      localStorage.setItem("answers", JSON.stringify(state.answer))
     },
   },
 })
