@@ -138,8 +138,6 @@ export const InputSlice = createSlice({
 
         mainLine = mainLine.replace(multypLine, multypResult)
       }
-      // let finalAnswer = parseFloat(mainLine)
-      // console.log(finalAnswer)
 
       function calculateExpression(expression) {
         let terms = expression.split(/[+-]/)
@@ -159,9 +157,8 @@ export const InputSlice = createSlice({
       }
 
       let result = calculateExpression(mainLine)
-      console.log(result)
 
-      state.answer.unshift(eval(state.input))
+      state.answer.unshift(result)
       localStorage.setItem("answers", JSON.stringify(state.answer))
     },
   },
