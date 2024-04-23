@@ -40,3 +40,7 @@ code {
   --button-bg: rgb(5, 9, 38);
   --button-hover: rgb(11, 16, 58);
 }
+
+i {
+  cursor: pointer;
+}

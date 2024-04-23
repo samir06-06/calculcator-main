@@ -8,6 +8,7 @@ function Input() {
     <input
       className="answer"
       type="text"
+      readOnly
       value={`=   ${finalAnswer !== undefined ? finalAnswer : ""}`}
     />
   )

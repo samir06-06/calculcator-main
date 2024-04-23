@@ -44,15 +44,18 @@ function TopPart() {
         </div>
       </div>
       <div id="mode">
-        <div class="form-check form-switch">
+        <div className="form-check form-switch">
           <input
             disabled
-            class="form-check-input"
+            className="form-check-input"
             type="checkbox"
             role="switch"
             id="flexSwitchCheckDefault"
           />
-          <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+          <label
+            className="form-check-label"
+            htmlFor="flexSwitchCheckDefault"
+          ></label>
           <i className="fa-regular fa-moon" onClick={toggleMode}></i>
           <i className="fa-regular fa-sun" onClick={toggleMode}></i>
         </div>
